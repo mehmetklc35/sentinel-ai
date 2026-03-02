@@ -69,3 +69,103 @@ It enables developers to:
 ## 📌 Vision
 
 To bridge the gap between system observability and intelligent prediction by creating a monitoring platform that doesn’t just react to failures — but anticipates them.
+
+
+🏗️ Sentinel-AI Mimari Tasarımı
+
+Frontend (React)
+        ↓
+API Layer (FastAPI)
+        ↓
+Core Engine
+   ├── Simulation Engine
+   ├── Metrics Engine
+   └── AI Analyzer
+        ↓
+Storage Layer
+
+📁 Proje Root
+
+sentinel-ai/
+│
+├── frontend/
+├── backend/
+├── ai-engine/
+├── docker/
+├── docs/
+└── README.md
+
+🎨 1. Frontend (React)
+
+frontend/
+│
+├── src/
+│   ├── components/
+│   │   ├── Dashboard/
+│   │   ├── SimulationPanel/
+│   │   └── InsightPanel/
+│   │
+│   ├── pages/
+│   │   └── Home.jsx
+│   │
+│   ├── services/
+│   │   └── api.js
+│   │
+│   ├── hooks/
+│   │   └── useMetrics.js
+│   │
+│   └── App.jsx
+│
+└── package.json
+
+🧠 2. Backend (FastAPI)
+backend/
+│
+├── app/
+│   ├── main.py
+│   │
+│   ├── api/
+│   │   ├── simulate.py
+│   │   ├── metrics.py
+│   │   └── analysis.py
+│   │
+│   ├── services/
+│   │   ├── simulation_service.py
+│   │   ├── metrics_service.py
+│   │   └── analysis_service.py
+│   │
+│   └── models/
+│       └── metric_model.py
+│
+└── requirements.txt
+
+🤖 3. AI Engine
+
+ai-engine/
+│
+├── anomaly_detector.py
+├── pattern_analyzer.py
+└── baseline_model.py
+
+🧪 4. Simulation Logic
+
+backend/app/services/
+│
+├── traffic_spike.py
+├── memory_leak.py
+└── cpu_overload.py
+
+🗄️ 5. Data Store (Başlangıç)
+
+backend/app/store/
+│
+└── in_memory_store.py
+
+🐳 6. Docker
+
+docker/
+│
+├── backend.Dockerfile
+├── frontend.Dockerfile
+└── docker-compose.yml
+
